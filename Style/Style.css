@@ -1,0 +1,273 @@
+:root{
+    --bg-header-color: #091a32;
+    --bg-body-color: #262C4C;
+    --bgb-header-color: #040c17;
+    --color-navbar-focus: #cbccd4;
+    --color-navbar:#FFFFFF;
+    --color-tilte:rgb(255, 106, 0);
+    --bg-btn-lok:#665EFF;
+    --bg-btn-lok-hover:#5f59cf;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-header-color);
+}
+
+/* */
+
+header{
+    display: flex;
+    background-color: var(--bg-header-color);
+    gap: 10px;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+/* My name or logo*/
+
+.titre_container{
+    padding: 15px;
+    color: rgb(255, 255, 255);
+
+}
+
+.titre_container h1 span{
+    color: var(--color-tilte);
+}
+
+/* Parre de navigation*/
+
+nav .menu_container
+{
+    padding-top: 10px;
+}
+
+
+nav .menu_container ul
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .menu_container ul li{
+    list-style-type: none;
+    gap: 1;
+    padding-top: 15px;
+    padding-right: 20px;
+}
+
+nav .menu_container ul li a{
+    color: var(--color-navbar);
+    text-decoration: none;
+    padding: 10px;
+}
+
+
+nav .menu_container ul li a:hover{
+    color:var(--color-tilte);
+    text-decoration: none;
+    border-bottom: var(--color-tilte) solid 2px;
+    
+}
+
+nav .menu_container ul li a:focus{
+    color:var(--color-navbar-focus);
+    text-decoration: none;
+    border-bottom: var(--color-tilte) solid 2px;
+}
+
+.body_container{
+    background-color: var(--bg-header-color);
+}
+/* Welcomme design */
+
+.welcome_container{
+    padding: 100px;
+    background-color: var(--bg-body-color);
+    text-align: center;
+    }
+
+.welcome_title{
+    background-color: var(--bg-body-color);
+    color: var(--color-navbar);
+    font-size: 4.5rem;
+    padding-bottom: 10px;
+}
+
+.describe{
+    background-color: var(--bg-body-color);
+    background-color: var(--bg-body-color);
+    color: var(--color-navbar-focus);
+    font-size: 1rem;
+    padding-bottom: 10px;
+}
+
+.welcome_button {
+    background-color: var(--bg-body-color);
+}
+
+.look_projet{
+    background-color: var(--bg-btn-lok);
+    color: var(--color-navbar);
+    border: solid 2px var(--bg-btn-lok);
+    padding: 10px;
+    font-size: 1.3rem;
+    border: none;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.look_projet:hover{
+    background-color: var(--bg-btn-lok-hover);
+    color: var(--color-navbar);
+    border: solid 2px var(--bg-btn-lok-hover);
+    padding: 10px;
+    font-size: 1.3rem;
+    border: none;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-right: 10px;
+
+}
+
+.look_projet a{
+    color:var(--color-navbar);
+    text-decoration: none;
+    background-color: transparent;
+}
+
+.call_me{
+    background-color: transparent;
+    color: var(--color-navbar);
+    padding: 10px;
+    font-size: 1.3rem;
+    border: solid 2px var(--bg-btn-lok);
+    font-weight: bold;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.call_me:hover{
+    background-color: var(--bg-btn-lok);
+    color: var(--color-navbar);
+    padding: 10px;
+    font-size: 1.3rem;
+    border: solid 2px var(--bg-btn-lok);
+    font-weight: bold;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.call_me a{
+    color:var(--color-navbar);
+    text-decoration: none;
+    background-color: transparent;
+}
+
+/*A propos*/
+.ext{
+    margin: 20px;
+    text-align: justify;
+    color: var(--color-navbar-focus);
+}
+
+/* Design de services*/
+
+#Services{
+    /*background-color: var(--bgb-header-color);*/
+    color: var(--color-navbar);
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+/* Design de projets*/
+
+#Projets{
+    /*background-color: var(--bgb-header-color);*/
+    color: var(--color-navbar);
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+/* Design de compétences*/
+
+#Competences{
+    /*background-color: var(--bgb-header-color);*/
+    color: var(--color-navbar);
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+/* Design de cv*/
+
+#CV{
+    /*background-color: var(--bgb-header-color);*/
+    color: var(--color-navbar);
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+/* Design de  zone de contact*/
+
+footer{
+    background-color: var(--bgb-header-color);
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
+#Contacts{
+    background-color: var(--bgb-header-color);
+    color: var(--color-navbar-focus);
+    padding-top: 10px;
+}
+.contact{
+    display: flex;
+    background-color: var(--bgb-header-color);
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact ul{
+    background-color: var(--bgb-header-color);
+    display: flex;
+    justify-content: space-between;
+    gap: 1Opx;
+    margin: 15px;
+}
+
+.contact ul li{
+    background-color: var(--bgb-header-color);
+    list-style-type: none;
+    padding: 15px;
+}
+
+.contact ul li a{
+    background-color: var(--bgb-header-color);
+    text-decoration: none;
+    color: var(--color-navbar);
+}
+
