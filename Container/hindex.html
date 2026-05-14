@@ -13,18 +13,19 @@
 </head>
 <body>
         <!-- Corps du site -->
-    <header>
+    <header class="fixed top-0 left-0 w-full  bg-white shadow-2xl py-5 px-10 flex justify-between items-center">
         <!-- En tête -->
-        <div class = "titre_container">
+        <div class = "">
             <h1>
                 IFA<span>Q</span>@
             </h1>
         </div>
         <!-- Barre de navigation -->
         <nav>
-            <div class = "menu_container">
-                <ul>
+            <div >
+                <ul class="flex justify-center items-center gap-5 text-[#086AD9]">
                     <li ><a href="#Accueil">Accueil</a></li>
+                    <li ><a href="#About Me">About Me</a></li>
                     <li ><a href="#Services">Services</a></li>
                     <li ><a href="#Projets">Projets</a></li>
                     <li ><a href="#Competences">Compétences</a></li>
@@ -41,43 +42,78 @@
     
     <!-- General presentation-->
 
-        <div class = "welcome_container">
-            <h1 class = "welcome_title">Créateur Digital</h1>
-            <p class = "describe">Maintenacier Informatique, Infographe Designer & Developpeur passioné.</p>
-            
-            <!-- Welcome button-->
-            
-            <div class = "welcome_button">
-                <button type="button" class = "look_projet"><a href="#Projets">Voir mes projets</a></button>
-                <button type="button" class = "call_me"><a href="#Contacts">Me contacter</a></button>
+        <div class = "grid grid-cols-2 md:grid-cols-1 lg:grid-cols-2 p-20 items-center  gap-5 bg-[#EAF3FF]">
+            <div>
+                <h1 class = "text-6xl text-center text-[#086AD9] font-bold">Boostez votre image de marque</h1>
+                <p class = "mt-8  text-justify text-xl text-shadow-black">Des créations graphiques modernes pour entreprises et particuliers.</p>
+                
+                <!-- Welcome button-->
+                
+                <div class = "text-center mt-4 ">
+                    <button type="button" class = "bg-[#086AD9] p-3 rounded-2xl text-white font-bold cursor-pointer hover:bg-[#0d4788] mx-4"><a href="#Projets">Voir mes projets</a></button>
+                    <button type="button" class = "text-[#086AD9] font-bold border-2 p-3 rounded-2xl cursor-pointer hover:bg-[#086AD9] hover:text-white "><a href="#Contacts">Me contacter</a></button>
+                </div>
+            </div>
+            <div class="profil">
+                <img src="/Ressource/IMG/profil.png" alt="">
             </div>
         </div>
     </div>
-    
-    <!-- ----------------------------------------------------------------------------Services-------------------------------------------------------------------- -->
-    <h2 id="Services">Services</h2>
-    <h2 id="Projets">Projets</h2>
-    <h2 id="Competences">Compétences</h2>
-    <h2 id="CV">CV</h2>
-    <!-- ---------------------------------------------------------------------------Projet------------------------------------------------------------------- -->
+    <!-- GAbout Me-->
+    <div class="p-40 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5">
+        <div>
+            <img src="/Ressource/IMG/profil.png" alt="profil">
+        </div>
 
-    <!-- ----------------------------------------------------------------------------Compétence------------------------------------------------------------------ -->
-    <!-- ------------------------------------------------------------------------------CV---------------------------------------------------------------------- -->
-    <h2 id = "change">Learning Javascript</h2>
-    <h3 id = "demo"> Je suis</h3>
-    <p id = "car"></p>
+        <div class="bg-[#EAF3FF] p-5 rounded-2xl">
+            <h2 class="text-2xl text-[#086AD9] font-bold mb-2"> About Me</h2>
+            <p class="text-justify">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit eos aspernatur laudantium aliquid voluptatum molestias. Iusto modi voluptatibus consequatur ea architecto quos! Est obcaecati repellat consectetur quasi. Obcaecati, labore modi!
+            </p>
+        </div>
+    </div>
+        
+    <!-- Tools-->
 
+    <div class="bg-[#EAF3FF] p-10">
+
+        <h2 class="text-2xl text-[#086AD9] font-bold mb-6"> Outils favories</h2>
+
+        <div class="place-items-center  grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-x-1 text-center items-center">
+            
+            <div class="h-24 w-24 rounded-full bg-white p-4 flex justify-center items-center shadow-md">
+                <img src="/Ressource/IMG/Photoshop.png" alt="shop" class="w-16 h-16 object-contain">
+            </div>
+
+            <div class="h-24 w-24 rounded-full bg-white p-4 flex justify-center items-center shadow-md">
+                <img src="/Ressource/IMG/Photoshop.png" alt="shop" class="w-16 h-16 object-contain">
+            </div>
+
+            <div class="h-24 w-24 rounded-full bg-white p-4 flex justify-center items-center shadow-md">
+                <img src="/Ressource/IMG/Photoshop.png" alt="shop" class="w-16 h-16 object-contain">
+            </div>
+
+            <div class="h-24 w-24 rounded-full bg-white p-4 flex justify-center items-center shadow-md">
+                <img src="/Ressource/IMG/Photoshop.png" alt="shop" class="w-16 h-16 object-contain">
+            </div>
+
+            <div class="h-24 w-24 rounded-full bg-white p-4 flex justify-center items-center shadow-md">
+                <img src="/Ressource/IMG/Photoshop.png" alt="shop" class="w-16 h-16 object-contain">
+            </div>
+        </div>
+        
+    </div>
     <!-- -----------------------------------------------------------------------------contact---------------------------------------------------------------------- -->
 
-    <footer>
-        <h2 id="Contacts">Contacts</h2>
-        <div class="contact">
-            <ul>
+    <footer class="bg-[#086AD9] p-10">
+        <h2 class="text-2xl text-white font-bold">Contacts</h2>
+        <div class="text-white  ">
+            <ul class="mt-2 text-xl grid grid-cols-1 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-2 text-center items-center justify-center">
                 <li><a href="#">+226 67 54 32 91</a></li>
                 <li><a href="#">+226 02 17 08 88</a></li>
                 <li><a href="mailto:sawadogosakalo@gmail.com">Gmail</a></li>
-                <li><a href="#">IFAQ Expert</a></li>
             </ul>
+            <p class="font-bold text-center mt-5"> IFAQ Expert</p>
         </div>
     </footer>
 </body>
